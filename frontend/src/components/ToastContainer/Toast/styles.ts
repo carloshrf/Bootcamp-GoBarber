@@ -1,4 +1,6 @@
 import styled, { css } from 'styled-components';
+// uma animação criada pelo react-spring usada no index do toastcontainer só pode ser realizado por um componente(animated) como pode ser visto na estilização Container
+import { animated } from 'react-spring';
 
 interface ContainerProps {
   type?: 'success' | 'error' | 'info';
@@ -20,7 +22,7 @@ const toastTypeVariations = {
   `,
 };
 
-export const Container = styled.div<ContainerProps>`
+export const Container = styled(animated.div)<ContainerProps>`
   width: 360px;
 
   position: relative;

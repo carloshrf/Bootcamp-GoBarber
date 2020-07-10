@@ -61,8 +61,6 @@ class AppointmentRepository implements IAppointmentRepository {
       },
     });
 
-    console.log(appointments);
-
     return appointments;
   }
 

@@ -1,4 +1,4 @@
-import { createConnection } from 'typeorm';
+import { createConnections } from 'typeorm';
 
-createConnection();
+createConnections();
 // busca por automático o arquivo ormconfig.json na raiz

@@ -22,7 +22,7 @@ const Route: React.FC<RouteProps> = ({
   return (
     <ReactDOMMRoute
       {...rest}
-      // location armazena histório do acesso de rotas
+      // location stores the history of access to routes
       render={({ location }) => {
         return isPrivate === !!user ? (
           <Component />
